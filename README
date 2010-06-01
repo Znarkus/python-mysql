@@ -1,4 +1,5 @@
 Written for Python 2.6, to simplify MySQL (utf-8) interactions from Python applications and scripts.
+Currently wraps the MySQLdb module.
 
 Example usage:
 
