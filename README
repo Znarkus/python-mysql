@@ -1,0 +1,17 @@
+Written for Python 2.6, to simplify MySQL (utf-8) interactions from Python applications and scripts.
+
+Example usage:
+
+db = Mysql(
+	host="localhost",
+	user="root",
+	password="root",
+	database="my-database-name")
+
+for row in db.query("SELECT * FROM users").fetchAll():
+	print row
+
+db.execute("""
+	INSERT INTO USERS
+	SET name = %s
+""", 'My user name')
